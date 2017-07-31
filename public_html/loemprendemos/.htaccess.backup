@@ -1,0 +1,29 @@
+# PRETTYURLS MOD BEGINS
+# Pretty URLs mod
+# http://code.google.com/p/prettyurls/
+# .htaccess file generated automatically on: June 8, 2017, 15:59
+
+RewriteEngine on
+RewriteBase /
+
+# Rules for: actions
+RewriteRule ^(activate|admin|announce|attachapprove|buddy|calendar|clock|collapse)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(coppa|credits|deletemsg|display|dlattach|editpoll|editpoll2|emailuser)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(findmember|groups|help|helpadmin|im|jseditor|jsmodify|jsoption)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(lock|lockvoting|login|login2|logout|markasread|mergetopics|mlist)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(moderate|modifycat|modifykarma|movetopic|movetopic2|notify|notifyboard|openidreturn)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(pm|post|post2|printpage|profile|quotefast|quickmod|quickmod2)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(recent|register|register2|reminder|removepoll|removetopic2|reporttm|requestmembers)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(restoretopic|search|search2|sendtopic|smstats|suggest|spellcheck|splittopics)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(stats|sticky|theme|trackip|about:mozilla|about:unknown|unread|unreadreplies)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(verificationcode|viewprofile|vote|viewquery|viewsmfile|who|\.xml|xmlhttp)/?$ ./index.php?pretty;action=$1 [L,QSA]
+
+# Rules for: boards
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/?$ ./index.php?pretty;board=$1.0 [L,QSA]
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([0-9]*)/?$ ./index.php?pretty;board=$1.$2 [L,QSA]
+
+# Rules for: topics
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([-_!~*'()$a-zA-Z0-9]+)/?$ ./index.php?pretty;board=$1;topic=$2.0 [L,QSA]
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([-_!~*'()$a-zA-Z0-9]+)/([0-9]*|msg[0-9]*|new)/?$ ./index.php?pretty;board=$1;topic=$2.$3 [L,QSA]
+
+# PRETTYURLS MOD ENDS

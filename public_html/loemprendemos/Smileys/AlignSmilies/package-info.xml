@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+
+	<id>sid2varun:aligntextwithbigsmiley</id>
+	<name>Align text with Smiley</name>
+	<version>1.3</version>
+	<type>modification</type>
+
+	<install for="1.1.12, 1.1.13, 1.1.14, 1.1.15">
+		<readme parsebbc="true">readme.txt</readme>
+		<modification>install1x.xml</modification>
+	</install>
+
+	<uninstall for="1.1.12, 1.1.13, 1.1.14, 1.1.15">
+		<modification reverse="true">install1x.xml</modification>
+		<redirect url="?action=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+		<install for="2.0 - 2.0.99">
+		<modification>install2x.xml</modification>
+		<readme parsebbc="true">readme.txt</readme>
+	</install>
+	
+	<uninstall for="2.0 - 2.0.99">
+		<modification reverse="true">install2x.xml</modification>
+		<redirect url="?action=admin;area=packages;sa=browse" timeout="1000" />
+	</uninstall>
+
+</package-info>

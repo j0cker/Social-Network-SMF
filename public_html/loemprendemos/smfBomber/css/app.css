@@ -1,0 +1,66 @@
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+.box div {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.div {
+  font: Arial, sans-serif;
+}
+.banner {
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0 auto;
+}
+body {
+  color: #444;
+  background: url("../img/white-sand.png");
+}
+.widget {
+  color: #0ee;
+  background-color: #999;
+}
+.a,
+#b {
+  color: red;
+}
+.mixin-class {
+  color: red;
+}
+.mixin-id {
+  color: red;
+}
+#header {
+  color: black;
+}
+#header .navigation {
+  font-size: 12px;
+}
+#header .logo {
+  width: 300px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+  font-weight: 100;
+  font-family: 'Lato';
+}
+.container {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.content {
+  text-align: center;
+  display: inline-block;
+}
+.title {
+  font-size: 96px;
+}

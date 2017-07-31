@@ -1,0 +1,1 @@
+When a user is using a Smiley the text or other smiley etc next to it tends to go to bottom i.e there alignment is disturbed. This mod will align them in middle as referred to the Smiley.

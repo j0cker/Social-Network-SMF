@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Package manifest file for Align Smileys
+
+	Author - Joker (http://www.simplemachines.org/community/index.php?action=profile;u=226111)
+	License - http://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0
+	
+	Version - 1.3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+
+	<name>Align text with Smiley</name>
+	<version>1.2</version>
+
+	<file name="$sourcedir/Subs-Editor.php">
+		<operation>
+			<search position="replace"><![CDATA[$text = preg_replace('~(?:\s|&nbsp;)?<(img\ssrc="' . preg_quote($modSettings['smileys_url'], '~') . '/[^<>]+?/([^<>]+?)"\s*)[^<>]*?class="smiley" />~e', '\'<\' . ' . 'stripslashes(\'$1\') . \'alt="" title="" onresizestart="return false;" id="smiley_\' . ' . "\$" . 'i++ . \'_$2" style="padding: 0 3px 0 3px;" />\'', $text);
+]]></search>
+			<add><![CDATA[$text = preg_replace('~(?:\s|&nbsp;)?<(img\ssrc="' . preg_quote($modSettings['smileys_url'], '~') . '/[^<>]+?/([^<>]+?)"\s*)[^<>]*?class="smiley" />~e', '\'<\' . ' . 'stripslashes(\'$1\') . \'alt="" title="" onresizestart="return false;" id="smiley_\' . ' . "\$" . 'i++ . \'_$2" style="padding: 0 3px 0 3px; vertically-align: middle" />\'', $text);
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/scripts/editor.js">
+		<operation>
+			<search position="replace"><![CDATA[this.insertText('<img src="' + oSmileyProperties.sSrc + '" id="smiley_' + iUniqueSmileyId + '_' + oSmileyProperties.sSrc.replace(/^.*\//, '') + '" onresizestart="return false;" align="bottom" alt="" title="' + oSmileyProperties.sDescription.php_htmlspecialchars() + '" style="padding: 0 3px 0 3px;" />');
+]]></search>
+			<add><![CDATA[this.insertText('<img src="' + oSmileyProperties.sSrc + '" id="smiley_' + iUniqueSmileyId + '_' + oSmileyProperties.sSrc.replace(/^.*\//, '') + '" onresizestart="return false;" align="middle" alt="" title="' + oSmileyProperties.sDescription.php_htmlspecialchars() + '" />');
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/css/index.css">
+		<operation>
+			<search position="replace"><![CDATA[img.smiley
+{
+	vertical-align: bottom;
+}
+]]></search>
+			<add><![CDATA[img.smiley
+{
+	vertical-align: middle;
+}
+]]></add>
+		</operation>
+		<operation>
+         <search position="end" />
+         <add><![CDATA[
+
+img.verticalalign
+{
+	vertical-align: middle;
+	padding: 0 3px 0 3px;
+}
+]]></add>
+      </operation>
+	</file>
+	
+</modification>

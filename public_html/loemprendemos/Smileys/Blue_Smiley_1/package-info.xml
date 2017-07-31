@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package-info xmlns="sblue" xmlns:smf="http://www.simpleportal.org/">
+<!-- ---------------------------------------------------------------------------
+	Package: "SP Blue smiley" mod Simple Machines Forum (SMF) V2.0 system
+	Author: smfportal
+	Copyright (c) 2016 smfportal.hu
+	License: license.txt
+---------------------------------------------------------------------------- -->
+  <id>WasdMan</id>
+  <name>Blue Smiley</name>
+  <version>1.0</version>
+  <type>modification</type>
+  <install>
+    <require-dir name="blue" destination="$smileysdir" />
+  </install>
+  <uninstall>
+    <remove-dir name="$smileysdir/blue" />
+  </uninstall>
+</package-info>

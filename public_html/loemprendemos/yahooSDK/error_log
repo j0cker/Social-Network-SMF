@@ -1,0 +1,52 @@
+[30-Jul-2017 10:55:34 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 24
+[30-Jul-2017 10:57:08 America/Denver] PHP Parse error:  syntax error, unexpected '<' in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 28
+[30-Jul-2017 10:58:42 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 25
+[30-Jul-2017 10:59:26 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 25
+[30-Jul-2017 11:01:28 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 24
+[30-Jul-2017 11:18:46 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 24
+[30-Jul-2017 11:18:53 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 11
+[30-Jul-2017 11:21:14 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 17
+[30-Jul-2017 11:21:53 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 22
+[30-Jul-2017 11:22:30 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 22
+[30-Jul-2017 11:23:15 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 22
+[30-Jul-2017 11:23:33 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 22
+[30-Jul-2017 11:24:44 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 22
+[30-Jul-2017 11:25:04 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 24
+[30-Jul-2017 11:25:10 America/Denver] PHP Notice:  Use of undefined constant grant_type - assumed 'grant_type' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 22
+[30-Jul-2017 11:38:16 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 24
+[30-Jul-2017 11:38:21 America/Denver] PHP Notice:  Trying to get property of non-object in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 44
+[30-Jul-2017 11:39:15 America/Denver] PHP Notice:  Trying to get property of non-object in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 43
+[30-Jul-2017 11:39:19 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 24
+[30-Jul-2017 11:39:28 America/Denver] PHP Notice:  Trying to get property of non-object in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 43
+[30-Jul-2017 11:39:42 America/Denver] PHP Notice:  Use of undefined constant access_token - assumed 'access_token' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 43
+[30-Jul-2017 11:39:50 America/Denver] PHP Notice:  Use of undefined constant access_token - assumed 'access_token' in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_token.php on line 43
+[30-Jul-2017 11:41:02 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 25
+[30-Jul-2017 11:42:16 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 25
+[30-Jul-2017 11:43:37 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 26
+[30-Jul-2017 14:54:58 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 30
+[30-Jul-2017 15:16:00 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 33
+[30-Jul-2017 15:16:04 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 33
+[30-Jul-2017 15:19:08 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 33
+[30-Jul-2017 15:21:40 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 33
+[30-Jul-2017 15:23:54 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 33
+[30-Jul-2017 15:36:14 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 15:36:20 America/Denver] PHP Notice:  Undefined variable: redirect_uri in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 25
+[30-Jul-2017 15:36:20 America/Denver] PHP Notice:  Undefined variable: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 25
+[30-Jul-2017 15:36:20 America/Denver] PHP Notice:  Undefined variable: grant_type in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 25
+[30-Jul-2017 15:37:29 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 15:37:35 America/Denver] PHP Notice:  Undefined variable: redirect_uri in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 23
+[30-Jul-2017 15:37:35 America/Denver] PHP Notice:  Undefined variable: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 23
+[30-Jul-2017 15:37:35 America/Denver] PHP Notice:  Undefined variable: grant_type in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 23
+[30-Jul-2017 15:39:44 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 15:41:18 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 15:42:39 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 15:45:38 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 15:50:38 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 16:01:16 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 46
+[30-Jul-2017 16:02:24 America/Denver] PHP Notice:  Undefined index: guid in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 5
+[30-Jul-2017 16:02:24 America/Denver] PHP Notice:  Undefined index: access_token in /home1/workiox0/public_html/loemprendemos/yahooSDK/curl_getContacts.php on line 6
+[30-Jul-2017 16:02:31 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 50
+[30-Jul-2017 16:03:39 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 50
+[30-Jul-2017 16:05:12 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 50
+[30-Jul-2017 16:05:20 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 50
+[30-Jul-2017 16:05:39 America/Denver] PHP Notice:  Undefined index: code in /home1/workiox0/public_html/loemprendemos/yahooSDK/index.php on line 50

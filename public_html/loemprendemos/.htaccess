@@ -1,0 +1,30 @@
+# PRETTYURLS MOD BEGINS
+# Pretty URLs mod
+# http://code.google.com/p/prettyurls/
+# .htaccess file generated automatically on: June 21, 2017, 21:26
+
+RewriteEngine on
+RewriteBase /
+
+# Rules for: actions
+RewriteRule ^(activate|admin|enotify|announce|attachapprove|buddy|calendar|clock)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(collapse|coppa|credits|deletemsg|display|dlattach|editpoll|editpoll2)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(emailuser|findmember|groups|help|helpadmin|im|jseditor|jsmodify)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(jsoption|lock|lockvoting|login|login2|logout|markasread|mergetopics)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(mlist|moderate|modifycat|modifykarma|movetopic|movetopic2|notify|notifyboard)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(openidreturn|pm|post|post2|printpage|profile|quotefast|quickmod)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(quickmod2|recent|register|register2|reminder|removepoll|removetopic2|reporttm)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(requestmembers|restoretopic|search|search2|sendtopic|smstats|suggest|spellcheck)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(splittopics|stats|sticky|theme|trackip|about:mozilla|about:unknown|unread)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(unreadreplies|verificationcode|viewprofile|vote|viewquery|viewsmfile|who|\.xml)/?$ ./index.php?pretty;action=$1 [L,QSA]
+RewriteRule ^(xmlhttp)/?$ ./index.php?pretty;action=$1 [L,QSA]
+
+# Rules for: boards
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/?$ ./index.php?pretty;board=$1.0 [L,QSA]
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([0-9]*)/?$ ./index.php?pretty;board=$1.$2 [L,QSA]
+
+# Rules for: topics
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([-_!~*'()$a-zA-Z0-9]+)/?$ ./index.php?pretty;board=$1;topic=$2.0 [L,QSA]
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([-_!~*'()$a-zA-Z0-9]+)/([0-9]*|msg[0-9]*|new)/?$ ./index.php?pretty;board=$1;topic=$2.$3 [L,QSA]
+
+# PRETTYURLS MOD ENDS

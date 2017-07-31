@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package-info xmlns="Alphabetic_Smileys" xmlns:smf="http://www.simplemachines.org/">
+  <id>Alan1979:Alphabetic_smileys</id>
+  <name>Alphabetic Smileys</name>
+  <version>1.0</version>
+  <type>modification</type>
+  <install>
+    <require-dir name="Alpahbetic Smileys" destination="$smileysdir" />
+  </install>
+  <uninstall>
+    <remove-dir name="$smileysdir/Alphabetic Smileys" />
+  </uninstall>
+</package-info>

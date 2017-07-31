@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>NEND:emojione</id>
+	<version>0.3.2</version>
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="after"><![CDATA[			if (!empty($modSettings['autoLinkUrls']))
+			{
+				// Are we inside tags that should be auto linked?
+				$no_autolink_area = false;
+				if (!empty($open_tags))
+				{
+					foreach ($open_tags as $open_tag)
+						if (in_array($open_tag['tag'], $no_autolink_tags))
+							$no_autolink_area = true;
+				}]]></search>
+			<add><![CDATA[			//Beginning of EmojiOne support
+			$data = mb_encode_numericentity ($data, array (0x1F000, 0x1F9FF, 0, 0x1F9FF,0x02600, 0x027FF, 0, 0x027FF), 'UTF-8');
+			preg_match_all('/&#([0-9]{4,6});/', $data, $matches, PREG_PATTERN_ORDER);
+			if (!empty($matches[0])) {
+				$replaces = array();
+				foreach ($matches[0] as $match => $dec) {
+					$int = substr($dec,2,-1);
+					if ($int >= 126976 && $int <= 129535 || $int >= 9728 && $int <= 10239) { // Emoji ranges
+						$hex = dechex($int);
+						if (isset($adec) && isset($replaces[$adec['dec']]) && ($int >= 127995 && $int <= 127999 || $int >= 127462 && $int <= 127487 && $adec['int'] >= 127462 && $adec['int'] <= 127487)) { // Modifiers Color || Flags
+							unset($replaces[$adec['dec']]);
+							$replaces[$adec['dec'].$dec] = '<img src="http://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.6/assets/svg/'.$adec['hex'].'-'.$hex.'.svg" alt="'.$adec['dec'].$dec.'" class="SM_EmojiOne" />';
+						} else {
+							$replaces[$dec] = '<img src="http://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.6/assets/svg/'.$hex.'.svg" alt="'.$dec.'" class="SM_EmojiOne" />';
+							$adec = array('dec' => $dec, 'int' => $int, 'hex' => $hex);
+						}
+					}
+				}
+				$data = strtr($data, $replaces);
+			}
+
+]]></add>
+		</operation>
+	</file>
+	<file name="$themedir/css/index.css">
+		<operation>
+			<search position="end"></search>
+			<add><![CDATA[
+/* Max width height Added by EmojiOne */
+img.SM_EmojiOne {max-width:30px;max-height:30px;}
+]]></add>
+		</operation>
+	</file>
+</modification>
